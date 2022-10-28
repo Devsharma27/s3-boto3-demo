@@ -1,9 +1,6 @@
-on:
-  push:
-    branches:
-      - master
+on: [push]
 jobs:
-  build-and-publish:
+  S3-sync:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
